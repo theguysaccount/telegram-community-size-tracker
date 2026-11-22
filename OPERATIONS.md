@@ -16,7 +16,7 @@ Channel Size Tracker runs itself on GitHub: Pages for hosting, Actions for every
 
 GitHub delays and skips scheduled runs on this account; each sample carries its own timestamp, so a late or missing run only widens one interval. The unusual-change rule ignores intervals longer than 72 hours.
 
-Temporary lines: `sample.yml` and `selftest.yml` each carry one cron line marked `TEMPORARY` that fires only on 22-23 November; delete them once a scheduled run has passed.
+Schedule check at launch: on 22 Nov 2026 the weekly self-test and the channel sampling (all 29 channels read) each ran on their own schedule and passed (first runs at 17:22 and 19:28 UTC). The temporary cron lines that made them fire early were then removed.
 
 Request budget: about 60 requests a day to t.me (29 channels, twice daily). The one-off archive backfill made about 25 requests per channel to the Internet Archive.
 
