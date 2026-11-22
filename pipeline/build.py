@@ -151,6 +151,10 @@ def pct_cell(ch):
     return f'<span class="chg {cls}">{A.signed_pct(ch["pct"])}</span>'
 
 
+def delta_cell(ch):
+    return format(ch["delta"], "+,") if ch else '<span class="na">n/a</span>'
+
+
 def sparkline(rows, w=120, h=28):
     pts = rows[-60:]
     if len(pts) < 2:
@@ -280,7 +284,7 @@ def page_channel(ctx, v):
     depth, pre, path = 2, "../../", f"channels/{v['slug']}/"
     ch = v["changes"]
     rows_ch = "".join(
-        f'<tr><th scope="row">{lab}</th><td>{pct_cell(ch[k])}</td><td class="num">{format(ch[k]["delta"], "+,") if ch[k] else '<span class="na">n/a</span>'}</td>'
+        f'<tr><th scope="row">{lab}</th><td>{pct_cell(ch[k])}</td><td class="num">{delta_cell(ch[k])}</td>'
         f'<td>{("since " + tday(ch[k]["from_time"])) if ch[k] else "not enough history"}</td></tr>'
         for k, lab in (("1d", "1 day"), ("7d", "7 days"), ("30d", "30 days"), ("1y", "1 year")))
     un = "".join(f'<li>{tday(u["time"])}: {E("rose" if u["kind"] == "jump" else "fell")} {A.signed_pct(u["pct"])} '
