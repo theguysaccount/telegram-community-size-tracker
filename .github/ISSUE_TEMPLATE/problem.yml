@@ -1,0 +1,17 @@
+name: Report a problem
+description: A count, title or flag on a channel page looks wrong
+title: "Problem: @"
+labels: ["problem"]
+body:
+  - type: input
+    id: handle
+    attributes:
+      label: Handle
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks wrong
+    validations:
+      required: true

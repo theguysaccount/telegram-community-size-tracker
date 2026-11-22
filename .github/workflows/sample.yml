@@ -1,0 +1,64 @@
+# Twice a day: read every tracked channel's public t.me page once, append the subscriber or member
+# count to its history, run the tests, commit, then rebuild the site.
+# Fails safely: a channel that can't be read keeps its history and shows the error on its page; the
+# run fails only if no channel at all could be read. Safe to re-run: a channel sampled in the last
+# 6 hours is skipped, so extra runs add no requests and no duplicate points.
+name: Sample channels
+
+on:
+  schedule:
+    - cron: "43 5,17 * * *"   # 05:43 and 17:43 UTC
+    - cron: "11 */4 22,23 11 *"   # TEMPORARY: proves the schedule trigger on 22-23 Nov 2026 only. Remove after the first scheduled run.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: sample
+  cancel-in-progress: false
+
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Read every channel's public page
+        run: python3 -m pipeline.sample
+      - name: Tests (refuse to commit data that breaks the build)
+        run: python3 -m unittest discover -s tests
+      - name: Commit the samples
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history data/state.json
+          if git diff --cached --quiet; then echo "No new samples."; exit 0; fi
+          git commit -q -m "Samples $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            if git pull -q --rebase origin main && git push -q origin HEAD:main; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 10))
+          done
+          echo "::error::Could not push the samples; the next run samples again."
+          exit 1
+      - name: Rebuild and redeploy the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
+
+  keepalive:
+    needs: sample
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - name: Keep scheduled workflows enabled
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/keepalive.sh

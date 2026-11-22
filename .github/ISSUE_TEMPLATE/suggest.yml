@@ -1,0 +1,30 @@
+name: Suggest a channel
+description: Suggest a public Telegram channel or group of a project, company or community to track
+title: "Suggest: @"
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The tracker follows public channels and groups of projects, companies and communities. It does not track personal channels. **This issue is public.**
+  - type: input
+    id: handle
+    attributes:
+      label: Handle
+      description: The part after t.me/, e.g. telegram
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Whose channel is it?
+      description: The project, company or community, with a link to its website if it has one
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This is a public channel or group, not a personal account.
+          required: true

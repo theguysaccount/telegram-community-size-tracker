@@ -1,0 +1,147 @@
+[
+ {
+  "handle": "telegram",
+  "category": "Telegram ecosystem",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "TelegramTips",
+  "category": "Telegram ecosystem",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "tginfo",
+  "category": "Telegram ecosystem",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "binance_announcements",
+  "category": "Exchanges",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "binanceexchange",
+  "category": "Exchanges",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "OKXAnnouncements",
+  "category": "Exchanges",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "Bybit_Announcements",
+  "category": "Exchanges",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "kucoin_news",
+  "category": "Exchanges",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "Kucoin_Exchange",
+  "category": "Exchanges",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "bitget_announcements",
+  "category": "Exchanges",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "MEXCEnglish",
+  "category": "Exchanges",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "tonblockchain",
+  "category": "Blockchains",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "toncoin",
+  "category": "Blockchains",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "cardano",
+  "category": "Blockchains",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "tronnetworkEN",
+  "category": "Blockchains",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "aptos",
+  "category": "Blockchains",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "arbitrum",
+  "category": "Blockchains",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "chainlink",
+  "category": "Blockchains",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "pancakeswap",
+  "category": "Wallets and DeFi",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "trustwallet",
+  "category": "Wallets and DeFi",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "tonkeeper_news",
+  "category": "Wallets and DeFi",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "notcoin",
+  "category": "Telegram mini-apps",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "hamster_kombat",
+  "category": "Telegram mini-apps",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "dogs_community",
+  "category": "Telegram mini-apps",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "blumcrypto",
+  "category": "Telegram mini-apps",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "cointelegraph",
+  "category": "Crypto data and media",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "whale_alert_io",
+  "category": "Crypto data and media",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "coinmarketcap",
+  "category": "Crypto data and media",
+  "added": "2026-11-22"
+ },
+ {
+  "handle": "coingecko",
+  "category": "Crypto data and media",
+  "added": "2026-11-22"
+ }
+]

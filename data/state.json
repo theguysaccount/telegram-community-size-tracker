@@ -1,0 +1,299 @@
+{
+ "channels": {
+  "Bybit_Announcements": {
+   "checked": "2026-11-22T08:55:19Z",
+   "count": 375706,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:19Z",
+   "status": "ok",
+   "title": "Bybit Announcements",
+   "verified": true
+  },
+  "Kucoin_Exchange": {
+   "checked": "2026-11-22T08:55:25Z",
+   "count": 172194,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:25Z",
+   "status": "ok",
+   "title": "KuCoin Exchange",
+   "verified": true
+  },
+  "MEXCEnglish": {
+   "checked": "2026-11-22T08:55:31Z",
+   "count": 213222,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:31Z",
+   "status": "ok",
+   "title": "MEXC English (Official)",
+   "verified": true
+  },
+  "OKXAnnouncements": {
+   "checked": "2026-11-22T08:55:16Z",
+   "count": 936500,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:16Z",
+   "status": "ok",
+   "title": "OKX Announcements",
+   "verified": true
+  },
+  "TelegramTips": {
+   "backfilled": "2026-11-22",
+   "checked": "2026-11-22T08:55:04Z",
+   "count": 10549316,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:04Z",
+   "status": "ok",
+   "title": "Telegram Tips",
+   "verified": true
+  },
+  "aptos": {
+   "checked": "2026-11-22T08:55:46Z",
+   "count": 69187,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:46Z",
+   "status": "ok",
+   "title": "Aptos",
+   "verified": false
+  },
+  "arbitrum": {
+   "checked": "2026-11-22T08:55:49Z",
+   "count": 8917,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:49Z",
+   "status": "ok",
+   "title": "Arbitrum Announcements Official",
+   "verified": false
+  },
+  "binance_announcements": {
+   "backfilled": "2026-11-22",
+   "checked": "2026-11-22T08:55:10Z",
+   "count": 3148698,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:10Z",
+   "status": "ok",
+   "title": "Binance Announcements",
+   "verified": true
+  },
+  "binanceexchange": {
+   "checked": "2026-11-22T08:55:13Z",
+   "count": 315178,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:13Z",
+   "status": "ok",
+   "title": "Binance English",
+   "verified": true
+  },
+  "bitget_announcements": {
+   "checked": "2026-11-22T08:55:28Z",
+   "count": 1501443,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:28Z",
+   "status": "ok",
+   "title": "Bitget Announcements",
+   "verified": true
+  },
+  "blumcrypto": {
+   "checked": "2026-11-22T08:56:10Z",
+   "count": 12445495,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:56:10Z",
+   "status": "ok",
+   "title": "Blum: All Crypto – One App",
+   "verified": true
+  },
+  "cardano": {
+   "checked": "2026-11-22T08:55:40Z",
+   "count": 13905,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:40Z",
+   "status": "ok",
+   "title": "Cardano Official",
+   "verified": true
+  },
+  "chainlink": {
+   "checked": "2026-11-22T08:55:52Z",
+   "count": 3865,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:52Z",
+   "status": "ok",
+   "title": "WAGMI: Chainlink Community",
+   "verified": false
+  },
+  "coingecko": {
+   "checked": "2026-11-22T08:56:22Z",
+   "count": 19264,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:56:22Z",
+   "status": "ok",
+   "title": "CoinGecko",
+   "verified": true
+  },
+  "coinmarketcap": {
+   "checked": "2026-11-22T08:56:19Z",
+   "count": 66553,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:56:19Z",
+   "status": "ok",
+   "title": "CoinMarketCap English",
+   "verified": true
+  },
+  "cointelegraph": {
+   "checked": "2026-11-22T08:56:13Z",
+   "count": 329054,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:56:13Z",
+   "status": "ok",
+   "title": "Cointelegraph",
+   "verified": false
+  },
+  "dogs_community": {
+   "checked": "2026-11-22T08:56:07Z",
+   "count": 6299776,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:56:07Z",
+   "status": "ok",
+   "title": "DOGS Community",
+   "verified": true
+  },
+  "hamster_kombat": {
+   "checked": "2026-11-22T08:53:04Z",
+   "count": 19288502,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:53:04Z",
+   "status": "ok",
+   "title": "Hamster Kombat Announcement",
+   "verified": true
+  },
+  "kucoin_news": {
+   "checked": "2026-11-22T08:55:22Z",
+   "count": 83792,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:22Z",
+   "status": "ok",
+   "title": "KuCoin Announcement",
+   "verified": false
+  },
+  "notcoin": {
+   "checked": "2026-11-22T08:56:04Z",
+   "count": 7653128,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:56:04Z",
+   "status": "ok",
+   "title": "Notcoin Community",
+   "verified": true
+  },
+  "pancakeswap": {
+   "checked": "2026-11-22T08:55:55Z",
+   "count": 91314,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:55Z",
+   "status": "ok",
+   "title": "PancakeSwap",
+   "verified": false
+  },
+  "telegram": {
+   "backfilled": "2026-11-22",
+   "checked": "2026-11-22T08:53:01Z",
+   "count": 9071412,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:53:01Z",
+   "status": "ok",
+   "title": "Telegram News",
+   "verified": true
+  },
+  "tginfo": {
+   "backfilled": "2026-11-22",
+   "checked": "2026-11-22T08:55:07Z",
+   "count": 84026,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:07Z",
+   "status": "ok",
+   "title": "Telegram Info",
+   "verified": false
+  },
+  "tonblockchain": {
+   "checked": "2026-11-22T08:55:34Z",
+   "count": 183183,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:34Z",
+   "status": "ok",
+   "title": "The Open Network",
+   "verified": true
+  },
+  "toncoin": {
+   "checked": "2026-11-22T08:55:37Z",
+   "count": 6125834,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:55:37Z",
+   "status": "ok",
+   "title": "Gram of TON",
+   "verified": false
+  },
+  "tonkeeper_news": {
+   "checked": "2026-11-22T08:56:01Z",
+   "count": 4176237,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:56:01Z",
+   "status": "ok",
+   "title": "Keeper News",
+   "verified": false
+  },
+  "tronnetworkEN": {
+   "checked": "2026-11-22T08:55:43Z",
+   "count": 41807,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:43Z",
+   "status": "ok",
+   "title": "TRON OFFICIAL MAIN GROUP",
+   "verified": true
+  },
+  "trustwallet": {
+   "checked": "2026-11-22T08:55:58Z",
+   "count": 10056,
+   "error": "",
+   "kind": "group",
+   "last_ok": "2026-11-22T08:55:58Z",
+   "status": "ok",
+   "title": "Trust Wallet - English",
+   "verified": false
+  },
+  "whale_alert_io": {
+   "checked": "2026-11-22T08:56:16Z",
+   "count": 295265,
+   "error": "",
+   "kind": "channel",
+   "last_ok": "2026-11-22T08:56:16Z",
+   "status": "ok",
+   "title": "Whale Alert",
+   "verified": false
+  }
+ },
+ "sampled": "2026-11-22T08:56:22Z"
+}

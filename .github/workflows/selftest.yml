@@ -1,0 +1,77 @@
+# Weekly: run the tests, check the live site in headless Chrome, check every sitemap page, the feed,
+# the open data and how fresh the data is. If the last sample is over 36 hours old, start a sample run.
+# A failure opens (or comments on) one issue labeled ops-alert; GitHub also emails the repo owner.
+# Read-only for the site. The keep-alive job runs even when the self-test fails.
+name: Weekly self-test
+
+on:
+  schedule:
+    - cron: "31 14 * * 6"   # Saturdays 14:31 UTC
+    - cron: "37 * 22,23 11 *"   # TEMPORARY: proves the schedule trigger on 22-23 Nov 2026 only. Remove after the first scheduled run.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+env:
+  SITE_URL: ${{ vars.SITE_URL || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests
+      - name: Live site in headless Chrome, desktop and phone
+        run: node scripts/e2e.mjs "$SITE_URL/"
+      - name: Live pages, feed, open data and freshness
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          python3 scripts/check_live.py "$SITE_URL"
+          code=$?
+          if [ "$code" = "3" ]; then
+            busy=$(gh run list --workflow sample.yml --limit 5 --json status -q '[.[] | select(.status != "completed")] | length')
+            if [ "$busy" = "0" ]; then
+              gh workflow run sample.yml --ref main
+              echo "::warning::The data was stale, so a sample run was started."
+            fi
+            exit 0
+          fi
+          exit $code
+      - name: Record the failure in an issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create ops-alert --color B42318 --description "Automated health check failed" 2>/dev/null || true
+          run="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          open=$(gh issue list --label ops-alert --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            gh issue comment "$open" --body "Still failing: $run"
+          else
+            gh issue create --label ops-alert --title "Weekly self-test failed" --body "The weekly self-test failed: $run. OPERATIONS.md explains each check."
+          fi
+
+  keepalive:
+    needs: selftest
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - name: Keep scheduled workflows enabled
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/keepalive.sh

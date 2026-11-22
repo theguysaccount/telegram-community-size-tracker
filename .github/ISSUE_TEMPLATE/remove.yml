@@ -1,0 +1,20 @@
+name: Stop tracking a channel
+description: For channel owners and admins who want their channel removed from the tracker
+title: "Stop tracking @"
+labels: ["removal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Channel owners and admins can ask for their channel to be removed. Its page and history will be taken down. **This issue is public**; please don't include personal contact details.
+  - type: input
+    id: handle
+    attributes:
+      label: Handle
+    validations:
+      required: true
+  - type: textarea
+    id: proof
+    attributes:
+      label: How can we confirm you run it?
+      description: For example, post the link to this issue in the channel or its description for a day.
