@@ -1,6 +1,7 @@
 {
  "channels": {
   "Bybit_Announcements": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:19Z",
    "count": 375706,
    "error": "",
@@ -11,6 +12,7 @@
    "verified": true
   },
   "Kucoin_Exchange": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:25Z",
    "count": 172194,
    "error": "",
@@ -21,6 +23,7 @@
    "verified": true
   },
   "MEXCEnglish": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:31Z",
    "count": 213222,
    "error": "",
@@ -31,6 +34,7 @@
    "verified": true
   },
   "OKXAnnouncements": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:16Z",
    "count": 936500,
    "error": "",
@@ -52,6 +56,7 @@
    "verified": true
   },
   "aptos": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:46Z",
    "count": 69187,
    "error": "",
@@ -62,6 +67,7 @@
    "verified": false
   },
   "arbitrum": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:49Z",
    "count": 8917,
    "error": "",
@@ -83,6 +89,7 @@
    "verified": true
   },
   "binanceexchange": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:13Z",
    "count": 315178,
    "error": "",
@@ -93,6 +100,7 @@
    "verified": true
   },
   "bitget_announcements": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:28Z",
    "count": 1501443,
    "error": "",
@@ -103,6 +111,7 @@
    "verified": true
   },
   "blumcrypto": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:56:10Z",
    "count": 12445495,
    "error": "",
@@ -113,6 +122,7 @@
    "verified": true
   },
   "cardano": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:40Z",
    "count": 13905,
    "error": "",
@@ -123,6 +133,7 @@
    "verified": true
   },
   "chainlink": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:52Z",
    "count": 3865,
    "error": "",
@@ -133,6 +144,7 @@
    "verified": false
   },
   "coingecko": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:56:22Z",
    "count": 19264,
    "error": "",
@@ -143,6 +155,7 @@
    "verified": true
   },
   "coinmarketcap": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:56:19Z",
    "count": 66553,
    "error": "",
@@ -153,6 +166,7 @@
    "verified": true
   },
   "cointelegraph": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:56:13Z",
    "count": 329054,
    "error": "",
@@ -163,6 +177,7 @@
    "verified": false
   },
   "dogs_community": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:56:07Z",
    "count": 6299776,
    "error": "",
@@ -173,6 +188,7 @@
    "verified": true
   },
   "hamster_kombat": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:53:04Z",
    "count": 19288502,
    "error": "",
@@ -183,6 +199,7 @@
    "verified": true
   },
   "kucoin_news": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:22Z",
    "count": 83792,
    "error": "",
@@ -193,6 +210,7 @@
    "verified": false
   },
   "notcoin": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:56:04Z",
    "count": 7653128,
    "error": "",
@@ -203,6 +221,7 @@
    "verified": true
   },
   "pancakeswap": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:55Z",
    "count": 91314,
    "error": "",
@@ -235,6 +254,7 @@
    "verified": false
   },
   "tonblockchain": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:34Z",
    "count": 183183,
    "error": "",
@@ -245,6 +265,7 @@
    "verified": true
   },
   "toncoin": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:37Z",
    "count": 6125834,
    "error": "",
@@ -255,6 +276,7 @@
    "verified": false
   },
   "tonkeeper_news": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:56:01Z",
    "count": 4176237,
    "error": "",
@@ -265,6 +287,7 @@
    "verified": false
   },
   "tronnetworkEN": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:43Z",
    "count": 41807,
    "error": "",
@@ -275,6 +298,7 @@
    "verified": true
   },
   "trustwallet": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:55:58Z",
    "count": 10056,
    "error": "",
@@ -285,6 +309,7 @@
    "verified": false
   },
   "whale_alert_io": {
+   "backfilled": "2026-11-22",
    "checked": "2026-11-22T08:56:16Z",
    "count": 295265,
    "error": "",
